@@ -77,4 +77,12 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <repositories>
+<!--    <repository>-->
+<!--      <id>id</id>-->
+<!--      <name>name</name>-->
+<!--      <url>url</url>-->
+<!--    </repository>-->
+  </repositories>
 </project>
