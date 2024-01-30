@@ -1,6 +1,7 @@
 package akur.belajar.test;
 
 import akur.belajar.test.generator.SimpleDisplayNameGenerator;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,5 +33,9 @@ public class CalculatorTest {
     public void testDivideFailed(){
         assertThrows(IllegalArgumentException.class, () -> calculator.divide(10, 0));
     }
+
+    @Test
+    @Disabled
+    public void testComingSoon(){}
 
 }
