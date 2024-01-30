@@ -1,8 +1,10 @@
 package akur.belajar.test;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
 
+//@Tag("integration-test")
 public class ConditionTest {
 
     @Test
