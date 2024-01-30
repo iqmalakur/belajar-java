@@ -2,6 +2,7 @@ package akur.belajar.test;
 
 import akur.belajar.test.generator.SimpleDisplayNameGenerator;
 import org.junit.jupiter.api.*;
+import org.opentest4j.TestAbortedException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -55,5 +56,15 @@ public class CalculatorTest {
     @Test
     @Disabled
     public void testComingSoon(){}
+
+    @Test
+    public void testAborted(){
+        var profile = System.getenv("PROFILE");
+        if(!"DEV".equals(profile)){
+            throw new TestAbortedException("Test dibatalkan karena bukan DEV");
+        }
+
+        // unit test untuk DEV
+    }
 
 }
