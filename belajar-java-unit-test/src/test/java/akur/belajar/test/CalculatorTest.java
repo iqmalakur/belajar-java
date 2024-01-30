@@ -1,15 +1,17 @@
 package akur.belajar.test;
 
-import org.junit.jupiter.api.DisplayName;
+import akur.belajar.test.generator.SimpleDisplayNameGenerator;
+import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-@DisplayName("Test untuk Calculator class")
+@DisplayNameGeneration(SimpleDisplayNameGenerator.class)
+//@DisplayName("Test untuk Calculator class")
 public class CalculatorTest {
     private Calculator calculator = new Calculator();
 
     @Test
-    @DisplayName("Test skenario sukses untuk method add(integer, integer)")
+//    @DisplayName("Test skenario sukses untuk method add(integer, integer)")
     public void testAddSuccess(){
         var result = calculator.add(10, 10);
 
